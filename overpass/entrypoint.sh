@@ -34,7 +34,7 @@ service apache2 start
 
 rm /data/db/osm3s_*
 
-nohup bin/dispatcher --osm-base --db-dir=/data/db &
+nohup bin/dispatcher --osm-base --db-dir=/data/db --rate-limit=10 --allow-duplicate-queries=yes &
 
 # Docker logs
 tail -f /var/log/apache2/access.log
