@@ -16,6 +16,7 @@ RUN chmod +x bin/* && chmod +x cgi-bin/*
 RUN a2enmod cgi
 COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
 COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/overpass/entrypoint.sh"]
 
 FROM overpass AS overpass-debug
