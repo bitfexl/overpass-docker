@@ -29,6 +29,16 @@ https://download.geofabrik.de/
 
 ## HOW TO USE
 
-todo
+**Build**
+
+```sh
+docker build -t overpass-docker .
+```
+
+**Run**
+
+```sh
+docker run --name overpass-api -p 80:80 -v /mnt/DATA_VOLUME:/data -e DATA_URL=https://planet.openstreetmap.org/pbf/planet-latest.osm.pbf -it overpass-docker
+```
 
 todo: test bz2 import
