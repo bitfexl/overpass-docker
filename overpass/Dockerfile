@@ -5,6 +5,7 @@ RUN apt update -y && apt install wget expat -y
 FROM base AS build
 RUN apt update -y && apt install g++ make libexpat1-dev zlib1g-dev -y
 COPY buildscript.sh .
+RUN chmod +x buildscript.sh
 RUN ./buildscript.sh
 
 FROM base AS overpass
