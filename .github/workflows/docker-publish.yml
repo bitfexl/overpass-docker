@@ -35,5 +35,6 @@ jobs:
               with:
                   context: ./overpass
                   push: true
+                  registry: ${{ env.REGISTRY }}
                   tags: "${{ env.IMAGE_NAME }}:latest"
                   labels: "org.opencontainers.image.source=https://github.com/bitfexl/overpass-docker,org.opencontainers.image.description=A docker overpass and overpass turbo container."
