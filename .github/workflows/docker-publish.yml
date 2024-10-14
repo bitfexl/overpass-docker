@@ -34,8 +34,4 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                   context: ./overpass
-                  labels:
-                      [
-                          "org.opencontainers.image.source=https://github.com/bitfexl/overpass-docker",
-                          "org.opencontainers.image.description=A docker overpass and overpass turbo container.",
-                      ]
+                  labels: "org.opencontainers.image.source=https://github.com/bitfexl/overpass-docker,org.opencontainers.image.description=A docker overpass and overpass turbo container."
