@@ -15,7 +15,7 @@ docker run --name overpass-api -p 80:80 -v /mnt/DATA_VOLUME:/data -e DATA_URL=ht
 Isle of man (small extract) for testing:
 
 ```sh
-docker run --name overpass-api -p 80:80 -v ./data:/data -e DATA_URL=https://download.geofabrik.de/europe/isle-of-man-latest.osm.pbf -d ghcr.io/bitfexl/overpass-docker:latest
+docker run --name overpass-api -p 80:80 -v overpass-api-data:/data -e DATA_URL=https://download.geofabrik.de/europe/isle-of-man-latest.osm.pbf -d ghcr.io/bitfexl/overpass-docker:latest
 ```
 
 **Build**
