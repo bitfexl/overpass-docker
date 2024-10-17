@@ -36,4 +36,4 @@ jobs:
                   tags: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest"
                   labels: |
                       org.opencontainers.image.source=https://github.com/bitfexl/overpass-docker
-                      org.opencontainers.image.description=A docker overpass and overpass turbo container.
+                      org.opencontainers.image.description=A docker overpass and overpass turbo image.
