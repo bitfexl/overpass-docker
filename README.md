@@ -2,7 +2,7 @@
 
 A docker overpass and overpass turbo setup.
 
-## HOW TO USE
+## Usage
 
 **Use image built by GitHub Actions**
 
